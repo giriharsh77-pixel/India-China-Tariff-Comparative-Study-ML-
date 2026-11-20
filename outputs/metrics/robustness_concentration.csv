@@ -1,0 +1,11 @@
+year,method,n_markets,n_products,n_categories,top_market,top_market_count
+2021,baseline,6,8,5,United States,3
+2021,ml,7,8,2,European Union,2
+2022,baseline,7,9,4,United Kingdom,3
+2022,ml,7,9,3,United States,3
+2023,baseline,5,6,1,European Union,3
+2023,ml,5,9,4,Indonesia,3
+2024,baseline,7,9,5,Indonesia,3
+2024,ml,6,7,3,European Union,3
+2025,baseline,6,6,4,European Union,4
+2025,ml,7,9,4,European Union,3

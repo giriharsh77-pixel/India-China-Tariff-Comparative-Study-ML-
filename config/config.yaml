@@ -1,0 +1,85 @@
+# Central configuration for the India-China tariff prospect-selection project.
+# All pipeline stages read from this file so results are reproducible.
+
+project:
+  random_seed: 42
+  exporter: India
+  competitor: China
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  outputs: outputs
+
+# Destination markets (importers). comtrade = UN Comtrade reporter code,
+# wits = WITS/TRAINS reporter code, wdi = World Bank ISO3 / aggregate code.
+# The EU is treated as ONE customs territory (EU-27, extra-EU imports only).
+markets:
+  - {name: United States,  iso3: USA, comtrade: 842, wits: "840", wdi: USA}
+  - {name: European Union, iso3: EUN, comtrade: 97,  wits: "918", wdi: EUU}
+  - {name: United Kingdom, iso3: GBR, comtrade: 826, wits: "826", wdi: GBR}
+  - {name: Japan,          iso3: JPN, comtrade: 392, wits: "392", wdi: JPN}
+  - {name: South Korea,    iso3: KOR, comtrade: 410, wits: "410", wdi: KOR}
+  - {name: Australia,      iso3: AUS, comtrade: 36,  wits: "036", wdi: AUS}
+  - {name: Canada,         iso3: CAN, comtrade: 124, wits: "124", wdi: CAN}
+  - {name: Indonesia,      iso3: IDN, comtrade: 360, wits: "360", wdi: IDN}
+  - {name: Malaysia,       iso3: MYS, comtrade: 458, wits: "458", wdi: MYS}
+  - {name: Mexico,         iso3: MEX, comtrade: 484, wits: "484", wdi: MEX}
+
+partners:
+  india:  {comtrade: 699, wits: "356"}   # Comtrade uses 699 for India
+  china:  {comtrade: 156, wits: "156"}
+  world:  {comtrade: 0,   wits: "000"}   # WITS 000 = MFN schedule
+
+years:
+  trade_first: 2012          # first year of importer-reported trade data
+  trade_last: 2025           # last year of importer-reported trade data
+  tariff_first: 2012
+  first_decision_year: 2015  # needs 3 years of history (t-3 >= 2012)
+  last_decision_year: 2024   # last year whose t+1 outcome is observable (2025)
+  forward_decision_year: 2025 # live shortlist (outcome not yet observable)
+  validation_years: [2018, 2019, 2020]   # hyper-parameter selection only
+  test_years: [2021, 2022, 2023, 2024]   # held-out rolling-origin backtest
+
+# Product universe: fixed ex ante using 2014 data only (before any decision
+# year whose outcome is evaluated) -> no look-ahead in product selection.
+universe:
+  selection_year: 2014
+  n_products: 200
+  min_india_world_exports_usd: 50000000
+  min_china_world_exports_usd: 50000000
+  excluded_chapters: ["27", "71", "93", "97", "98", "99"]
+  min_chapter: 25            # manufactured / industrial goods (HS 25-96)
+
+# Candidate (opportunity) eligibility at a decision year t, using only data
+# observed at t.
+candidates:
+  min_india_imports_usd: 1000000      # India already present: >= US$1m at t
+  min_market_imports_usd: 20000000    # market size >= US$20m at t
+
+baseline:
+  momentum_years: 3
+  smoothing_usd: 100000
+
+evaluation:
+  k_main: 10
+  k_list: [5, 10, 20, 50]
+  success_threshold_pp: 0.0   # success = India share rises (> 0 pp) in t+1
+  top_share_quantile: 0.9     # "true top-decile" opportunities for Recall
+
+ml:
+  target: d_share_pp
+  winsor_quantiles: [0.01, 0.99]   # fitted on training rows only
+  selection_metric: ndcg_at_20
+  models:
+    hgb:
+      learning_rate: [0.03, 0.08]
+      max_depth: [3, 6]
+      min_samples_leaf: [40, 120]
+      max_iter: [300]
+      l2_regularization: [1.0]
+    rf:
+      n_estimators: [400]
+      max_depth: [8, 14]
+      min_samples_leaf: [20, 60]
+      max_features: [0.5]

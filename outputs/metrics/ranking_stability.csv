@@ -1,0 +1,21 @@
+method,from,to,jaccard_top10
+Historical momentum (baseline),2021,2022,0.17647058823529413
+Historical momentum (baseline),2022,2023,0.17647058823529413
+Historical momentum (baseline),2023,2024,0.05263157894736842
+Historical momentum (baseline),2024,2025,0.25
+ML ranking,2021,2022,0.05263157894736842
+ML ranking,2022,2023,0.05263157894736842
+ML ranking,2023,2024,0.05263157894736842
+ML ranking,2024,2025,0.17647058823529413
+ML without tariff features,2021,2022,0.05263157894736842
+ML without tariff features,2022,2023,0.1111111111111111
+ML without tariff features,2023,2024,0.05263157894736842
+ML without tariff features,2024,2025,0.1111111111111111
+ML alternative family (HGB),2021,2022,0.05263157894736842
+ML alternative family (HGB),2022,2023,0.17647058823529413
+ML alternative family (HGB),2023,2024,0.1111111111111111
+ML alternative family (HGB),2024,2025,0.05263157894736842
+Share-momentum (alt. baseline),2021,2022,0.17647058823529413
+Share-momentum (alt. baseline),2022,2023,0.1111111111111111
+Share-momentum (alt. baseline),2023,2024,0.05263157894736842
+Share-momentum (alt. baseline),2024,2025,0.17647058823529413

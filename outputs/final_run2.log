@@ -1,0 +1,70 @@
+03:34:55 | INFO | pipeline | === stage: backtest
+03:35:00 | INFO | ml | validation hgb {'learning_rate': 0.03, 'max_depth': 3, 'min_samples_leaf': 40, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.143 spearman=0.079
+03:35:03 | INFO | ml | validation hgb {'learning_rate': 0.03, 'max_depth': 3, 'min_samples_leaf': 120, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.104 spearman=0.103
+03:35:12 | INFO | ml | validation hgb {'learning_rate': 0.03, 'max_depth': 6, 'min_samples_leaf': 40, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.078 spearman=0.093
+03:35:19 | INFO | ml | validation hgb {'learning_rate': 0.03, 'max_depth': 6, 'min_samples_leaf': 120, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.070 spearman=0.094
+03:35:21 | INFO | ml | validation hgb {'learning_rate': 0.08, 'max_depth': 3, 'min_samples_leaf': 40, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.087 spearman=0.084
+03:35:24 | INFO | ml | validation hgb {'learning_rate': 0.08, 'max_depth': 3, 'min_samples_leaf': 120, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.069 spearman=0.084
+03:35:29 | INFO | ml | validation hgb {'learning_rate': 0.08, 'max_depth': 6, 'min_samples_leaf': 40, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.074 spearman=0.062
+03:35:33 | INFO | ml | validation hgb {'learning_rate': 0.08, 'max_depth': 6, 'min_samples_leaf': 120, 'max_iter': 300, 'l2_regularization': 1.0} -> ndcg@20=0.075 spearman=0.053
+03:35:40 | INFO | ml | validation rf {'n_estimators': 400, 'max_depth': 8, 'min_samples_leaf': 20, 'max_features': 0.5} -> ndcg@20=0.161 spearman=0.075
+03:35:47 | INFO | ml | validation rf {'n_estimators': 400, 'max_depth': 8, 'min_samples_leaf': 60, 'max_features': 0.5} -> ndcg@20=0.127 spearman=0.097
+03:35:59 | INFO | ml | validation rf {'n_estimators': 400, 'max_depth': 14, 'min_samples_leaf': 20, 'max_features': 0.5} -> ndcg@20=0.116 spearman=0.088
+03:36:09 | INFO | ml | validation rf {'n_estimators': 400, 'max_depth': 14, 'min_samples_leaf': 60, 'max_features': 0.5} -> ndcg@20=0.122 spearman=0.102
+03:36:09 | INFO | ml | Selected model: rf {'n_estimators': 400, 'max_depth': 8, 'min_samples_leaf': 20, 'max_features': 0.5} (ndcg_at_20=0.161)
+03:36:19 | INFO | backtest | Fold T=2021: train 6815 rows, scored 1172 candidates
+03:36:30 | INFO | backtest | Fold T=2022: train 7987 rows, scored 1230 candidates
+03:36:41 | INFO | backtest | Fold T=2023: train 9217 rows, scored 1192 candidates
+03:37:10 | INFO | backtest | Fold T=2024: train 10409 rows, scored 1191 candidates
+03:37:35 | INFO | backtest | Fold T=2025: train 11600 rows, scored 1202 candidates
+03:37:37 | INFO | backtest | Backtest summary (K=10):
+                        method  k  precision_at_k  top_decile_precision_at_k  mean_d_share_pp_at_k  median_d_share_pp_at_k  mean_export_growth_log_at_k  ndcg_at_k  overlap_true_top_k  spearman_all
+Historical momentum (baseline) 10           0.325                      0.150             -6.467380               -3.214368                    -1.669624   0.111639               0.100     -0.115296
+   ML alternative family (HGB) 10           0.500                      0.300             -0.774391                0.548251                    -0.701829   0.138589               0.050      0.102277
+                    ML ranking 10           0.550                      0.375             -0.927848                1.321736                    -0.658033   0.122742               0.050      0.101868
+    ML without tariff features 10           0.600                      0.400              0.141254                1.650218                    -0.554810   0.137180               0.050      0.096020
+Share-momentum (alt. baseline) 10           0.175                      0.125            -13.328382               -9.660593                    -0.828368   0.077984               0.025     -0.117198
+03:37:37 | INFO | pipeline | === stage backtest done in 161.6s
+03:37:37 | INFO | pipeline | === stage: robustness
+03:37:38 | INFO | backtest | Robustness checks written
+03:37:38 | INFO | pipeline | === stage robustness done in 1.4s
+03:37:38 | INFO | pipeline | === stage: diversion
+03:37:40 | INFO | diversion | Trade-diversion regressions:
+                       spec      variable     coef       se  p_value     n       r2
+  (1) level, market-year FE    tariff_adv 0.025376 0.019215 0.186631 11413 0.017479
+(2) + product FE + controls    tariff_adv 0.028585 0.024735 0.247812 11413 0.100609
+    (3) change in advantage    tariff_adv 0.022211 0.020003 0.266825 11413 0.100805
+    (3) change in advantage d1_tariff_adv 0.086162 0.121307 0.477534 11413 0.100805
+  (4) export growth outcome    tariff_adv 0.004009 0.002486 0.106775 11413 0.224667
+  (4) export growth outcome d1_tariff_adv 0.002964 0.008020 0.711669 11413 0.224667
+03:37:40 | INFO | pipeline | === stage diversion done in 1.6s
+03:37:40 | INFO | pipeline | === stage: simulation
+03:37:42 | INFO | simulation | Scenario summary (K=10):
+                                       scenario  k  n_new  n_removed  mean_pred_topk_base  mean_pred_topk_scen  mean_pred_change_all  mean_abs_rank_change_all
+                                     Status quo 10      0          0             1.410754             1.410754          7.075727e-19                  0.000000
+                        China faces +5pp tariff 10      1          1             1.410754             1.416637          4.842899e-03                 42.306156
+                 India receives -5pp tariff cut 10      1          1             1.410754             1.412875          3.874578e-04                 23.845258
+                          Both face +5pp tariff 10      1          1             1.410754             1.418126          2.774739e-03                 17.853577
+               India loses its tariff advantage 10      0          0             1.410754             1.414633          4.462100e-04                  1.006656
+China's tariff advantage increases (China -5pp) 10      1          1             1.410754             1.408690         -1.574561e-03                  4.004992
+                      Import demand +5pp growth 10      1          1             1.410754             1.412082         -6.291430e-03                 18.292845
+                      Import demand -5pp growth 10      1          1             1.410754             1.419384          9.030186e-03                 25.497504
+03:37:42 | INFO | pipeline | === stage simulation done in 1.9s
+03:37:42 | INFO | pipeline | === stage: figures
+03:37:48 | INFO | viz | Wrote 17 figures
+03:37:48 | INFO | pipeline | === stage figures done in 5.7s
+03:37:48 | INFO | pipeline | === stage: validate
+03:37:48 | INFO | validate | QC report:
+                                             check  passed  hard                                                                         detail
+             No duplicate market-product-year rows    True  True                                                                     12802 rows
+                            Shares within [0, 100]    True  True                                                           share_ind, share_chn
+                  Tariff advantage = China - India    True  True                                                                       identity
+                 No outcome column used as feature    True  True                                                                    33 features
+Training years strictly precede each decision year    True  True 2021:2015-2020; 2022:2015-2021; 2023:2015-2022; 2024:2015-2023; 2025:2015-2024
+                Validation and test years disjoint    True  True                           val=[2018, 2019, 2020] test=[2021, 2022, 2023, 2024]
+           Both approaches score the same universe    True  True                                                           4785 test candidates
+       All test candidates have a realised outcome    True  True                                                                          1.000
+    Candidates eligible only on decision-time data    True  True                                                          imp_ind >= US$1m at t
+Share of tariff values carried forward (disclosed)    True False                                                        30.0% of candidate rows
+                      India+China <= World imports    True False                                                                 0 rows flagged
+03:37:48 | INFO | pipeline | === stage validate done in 0.0s

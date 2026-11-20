@@ -1,0 +1,11 @@
+rank,market,hs6,short_desc,category,imp_ind,share_ind,share_chn,tariff_ind,tariff_chn,tariff_adv,g3_ind,score_ml,y_d_share_pp,y_export_growth_log,y_success
+1,Malaysia,300410,"Medicaments; containing penicillins, streptomycins or their ",Chemicals & pharmaceuticals,5724900.09,13.493662778167337,3.058143339724792,0.0,0.0,0.0,-0.01985997981225,1.8206134751968528,,,
+2,Indonesia,290611,"Alcohols; cyclanic, cyclenic or cycloterpenic and derivative",Chemicals & pharmaceuticals,3099297.265,11.543798608412134,58.75065416457581,0.0,0.0,0.0,-0.22039740463886068,1.5420405991347135,,,
+3,Canada,732591,"Iron; grinding balls and similar articles for mills, other t",Base metals & articles,3273260.803,13.378240219671088,45.18090999559492,0.0,0.0,0.0,-0.5495288731391176,1.5216851999473795,,,
+4,United States,290611,"Alcohols; cyclanic, cyclenic or cycloterpenic and derivative",Chemicals & pharmaceuticals,19611950.0,28.25466856931389,0.9857132753815331,2.09999990463257,2.09999990463257,0.0,-0.13287101218882094,1.4317113569910973,,,
+5,European Union,290243,Cyclic hydrocarbons; p-xylene,Chemicals & pharmaceuticals,8614995.979,6.165227160006968,0.002434066453874376,0.0,0.0,0.0,-0.9705543441863332,1.372377213165338,,,
+6,European Union,570190,"Carpets and other textile floor coverings; knotted, of texti",Textiles & apparel,13224167.797,37.117139807035855,16.731417813018883,5.75,5.75,0.0,-0.06503575848596199,1.3526271521202637,,,
+7,Japan,320419,"Dyes; n.e.c., including mixtures of colouring matter of two ",Chemicals & pharmaceuticals,6595459.12,28.26947745767836,31.965283396687056,0.0,2.20000004768372,2.20000004768372,-0.10327951031259275,1.3450594903774822,,,
+8,South Korea,320416,Dyes; reactive dyes and preparations based thereon,Chemicals & pharmaceuticals,12676817.0,26.600080802295366,59.717925960270065,0.0,0.0,0.0,-0.17401753153722055,1.2773747330872296,,,
+9,Canada,761410,"Aluminium; stranded wire, cables, plaited bands and the like",Base metals & articles,1296252.448,4.928961592605844,4.851859101395501,0.0,0.0,0.0,-0.5677068835495884,1.2483086391188942,,,
+10,European Union,680223,"Granite; articles thereof, simply cut or sawn, with a flat o","Stone, ceramic & glass",29694793.593,42.371204810019925,28.654029128144337,1.70000004768372,1.70000004768372,0.0,-0.18700770985646523,1.195739664384494,,,

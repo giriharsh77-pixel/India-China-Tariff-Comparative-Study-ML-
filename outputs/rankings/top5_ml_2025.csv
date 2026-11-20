@@ -1,0 +1,6 @@
+rank,market,hs6,short_desc,category,imp_ind,share_ind,share_chn,tariff_ind,tariff_chn,tariff_adv,g3_ind,score_ml,y_d_share_pp,y_export_growth_log,y_success
+1,Malaysia,300410,"Medicaments; containing penicillins, streptomycins or their ",Chemicals & pharmaceuticals,5724900.09,13.493662778167337,3.058143339724792,0.0,0.0,0.0,-0.01985997981225,1.8206134751968528,,,
+2,Indonesia,290611,"Alcohols; cyclanic, cyclenic or cycloterpenic and derivative",Chemicals & pharmaceuticals,3099297.265,11.543798608412134,58.75065416457581,0.0,0.0,0.0,-0.22039740463886068,1.5420405991347135,,,
+3,Canada,732591,"Iron; grinding balls and similar articles for mills, other t",Base metals & articles,3273260.803,13.378240219671088,45.18090999559492,0.0,0.0,0.0,-0.5495288731391176,1.5216851999473795,,,
+4,United States,290611,"Alcohols; cyclanic, cyclenic or cycloterpenic and derivative",Chemicals & pharmaceuticals,19611950.0,28.25466856931389,0.9857132753815331,2.09999990463257,2.09999990463257,0.0,-0.13287101218882094,1.4317113569910973,,,
+5,European Union,290243,Cyclic hydrocarbons; p-xylene,Chemicals & pharmaceuticals,8614995.979,6.165227160006968,0.002434066453874376,0.0,0.0,0.0,-0.9705543441863332,1.372377213165338,,,

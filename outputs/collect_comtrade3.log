@@ -1,0 +1,89 @@
+02:24:33 | WARNING | collect | Comtrade call quota exhausted; sleeping 342s
+02:30:22 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:30:35 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:30:43 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:31:08 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:31:16 | INFO | collect | Comtrade imports collected for 2012
+02:31:16 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:31:53 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:32:01 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:32:09 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:32:20 | INFO | collect | Comtrade imports collected for 2013
+02:32:20 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:32:32 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:32:53 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:33:00 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:33:08 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:33:21 | INFO | collect | Comtrade imports collected for 2014
+02:33:28 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:33:50 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:33:58 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:34:06 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:34:13 | INFO | collect | Comtrade imports collected for 2015
+02:34:13 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:34:25 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:34:51 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:35:06 | INFO | collect | Comtrade imports collected for 2016
+02:35:06 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:35:18 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:35:29 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:35:37 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:35:45 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:36:00 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:36:07 | INFO | collect | Comtrade imports collected for 2017
+02:36:08 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:36:35 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:36:45 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:36:53 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:37:01 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:37:08 | INFO | collect | Comtrade imports collected for 2018
+02:37:08 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:37:19 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:37:31 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:37:38 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:37:46 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:37:53 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:38:05 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:38:12 | INFO | collect | Comtrade imports collected for 2019
+02:38:13 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:38:21 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:38:41 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:38:49 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:38:56 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:39:10 | INFO | collect | Comtrade imports collected for 2020
+02:39:10 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:39:19 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:39:26 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:39:38 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:39:46 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:39:53 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:40:01 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:40:15 | INFO | collect | Comtrade imports collected for 2021
+02:40:16 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:40:24 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:40:31 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:40:54 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:41:02 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:41:10 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:41:21 | INFO | collect | Comtrade imports collected for 2022
+02:41:21 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:41:33 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:41:45 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:41:52 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:42:00 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:42:07 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:42:15 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:42:29 | INFO | collect | Comtrade imports collected for 2023
+02:42:29 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:42:37 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:43:15 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:43:23 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:43:40 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:43:48 | INFO | collect | Comtrade imports collected for 2024
+02:43:53 | WARNING | collect | Comtrade call quota exhausted; sleeping 2782s
+03:30:24 | WARNING | collect | 429 rate-limited; sleeping 5s
+03:30:33 | WARNING | collect | 429 rate-limited; sleeping 5s
+03:30:53 | WARNING | collect | 429 rate-limited; sleeping 5s
+03:31:08 | WARNING | collect | 429 rate-limited; sleeping 5s
+03:31:15 | INFO | collect | Comtrade imports collected for 2025
+COMTRADE DONE

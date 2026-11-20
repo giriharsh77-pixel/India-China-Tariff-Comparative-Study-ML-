@@ -1,0 +1,18 @@
+03:41:20 | INFO | pipeline | === stage: figures
+03:41:27 | INFO | viz | Wrote 17 figures
+03:41:27 | INFO | pipeline | === stage figures done in 6.9s
+03:41:27 | INFO | pipeline | === stage: validate
+03:41:27 | INFO | validate | QC report:
+                                             check  passed  hard                                                                         detail
+             No duplicate market-product-year rows    True  True                                                                     12802 rows
+                            Shares within [0, 100]    True  True                                                           share_ind, share_chn
+                  Tariff advantage = China - India    True  True                                                                       identity
+                 No outcome column used as feature    True  True                                                                    33 features
+Training years strictly precede each decision year    True  True 2021:2015-2020; 2022:2015-2021; 2023:2015-2022; 2024:2015-2023; 2025:2015-2024
+                Validation and test years disjoint    True  True                           val=[2018, 2019, 2020] test=[2021, 2022, 2023, 2024]
+           Both approaches score the same universe    True  True                                                           4785 test candidates
+       All test candidates have a realised outcome    True  True                                                                          1.000
+    Candidates eligible only on decision-time data    True  True                                                          imp_ind >= US$1m at t
+Share of tariff values carried forward (disclosed)    True False                                                        30.0% of candidate rows
+                      India+China <= World imports    True False                                                                 0 rows flagged
+03:41:27 | INFO | pipeline | === stage validate done in 0.1s

@@ -1,0 +1,16 @@
+02:01:13 | INFO | collect | Comtrade imports collected for United States
+02:01:13 | INFO | collect | Comtrade imports collected for European Union
+02:01:23 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:01:34 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:01:42 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:01:50 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:02:05 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:02:12 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:02:20 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:02:28 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:02:36 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:02:43 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:02:51 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:03:03 | WARNING | collect | 429 rate-limited; sleeping 5s
+02:21:14 | WARNING | collect | GET failed (2/25) https://comtradeapi.un.org/public/v1/preview/C/A/HS: HTTPSConnectionPool(host='comtradeapi.un.org', port=443): Read timed out. (read timeout=180)
+02:21:20 | WARNING | collect | Comtrade quota window exhausted; sleeping 180s

@@ -1,0 +1,25 @@
+01:51:06 | INFO | collect | TRAINS tariffs collected for United States
+01:51:34 | INFO | collect | TRAINS tariffs collected for European Union
+01:51:57 | INFO | collect | TRAINS tariffs collected for United Kingdom
+01:52:25 | INFO | collect | TRAINS tariffs collected for Japan
+01:52:49 | INFO | collect | TRAINS tariffs collected for South Korea
+01:53:16 | INFO | collect | TRAINS tariffs collected for Australia
+01:53:45 | INFO | collect | TRAINS tariffs collected for Canada
+01:54:11 | INFO | collect | TRAINS tariffs collected for Indonesia
+01:54:34 | INFO | collect | TRAINS tariffs collected for Malaysia
+01:54:57 | INFO | collect | TRAINS tariffs collected for Mexico
+01:54:57 | WARNING | collect | GET failed (1/5) https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;2: 413 Client Error: Payload Too Large for url: https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;290611;291590;292419;293299;293319;293329;293339;293359;293399;293499;294110;294190;294200;300390;300410;300420/year/all/datatype/reported
+01:55:01 | WARNING | collect | GET failed (2/5) https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;2: 413 Client Error: Payload Too Large for url: https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;290611;291590;292419;293299;293319;293329;293339;293359;293399;293499;294110;294190;294200;300390;300410;300420/year/all/datatype/reported
+01:55:07 | WARNING | collect | GET failed (3/5) https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;2: 413 Client Error: Payload Too Large for url: https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;290611;291590;292419;293299;293319;293329;293339;293359;293399;293499;294110;294190;294200;300390;300410;300420/year/all/datatype/reported
+01:55:17 | WARNING | collect | GET failed (4/5) https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;2: 413 Client Error: Payload Too Large for url: https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;290611;291590;292419;293299;293319;293329;293339;293359;293399;293499;294110;294190;294200;300390;300410;300420/year/all/datatype/reported
+01:55:29 | WARNING | collect | GET failed (5/5) https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;2: 413 Client Error: Payload Too Large for url: https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;290611;291590;292419;293299;293319;293329;293339;293359;293399;293499;294110;294190;294200;300390;300410;300420/year/all/datatype/reported
+Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+    collect_pref_presence(cfg, codes[:20]).to_csv('data/processed/pref_presence.csv',index=False)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/harshgiri/Downloads/india_china_tariff_prospect_selection/src/data_collection.py", line 256, in collect_pref_presence
+    recs = parse_trains(_get(url, cache, pause=0.8))
+                        ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshgiri/Downloads/india_china_tariff_prospect_selection/src/data_collection.py", line 71, in _get
+    raise RuntimeError(f"Failed to download {url}: {last}")
+RuntimeError: Failed to download https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;290611;291590;292419;293299;293319;293329;293339;293359;293399;293499;294110;294190;294200;300390;300410;300420/year/all/datatype/reported: 413 Client Error: Payload Too Large for url: https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/all/product/252310;281820;290220;290243;290611;291590;292419;293299;293319;293329;293339;293359;293399;293499;294110;294190;294200;300390;300410;300420/year/all/datatype/reported

@@ -1,0 +1,6 @@
+rank,market,hs6,short_desc,category,imp_ind,share_ind,share_chn,tariff_ind,tariff_chn,tariff_adv,g3_ind,score_baseline,y_d_share_pp,y_export_growth_log,y_success
+1,Australia,730511,Iron or steel (excluding cast iron); line pipe of a kind use,Base metals & articles,59331651.022,21.211781868481676,2.0744318318998656,5.0,0.0,-5.0,2.1291373409797036,2.1291373409797036,,,
+2,European Union,720110,Iron; non-alloy pig iron containing by weight 0.5% or less o,Base metals & articles,46168061.276,4.493467346155298,0.0035552858602890982,1.27499997615814,1.27499997615814,0.0,2.000291434858259,2.000291434858259,,,
+3,United States,740311,"Copper; refined, unwrought, cathodes and sections of cathode",Base metals & articles,58732798.0,0.35195936295734503,0.0006854221379968679,1.0,1.0,0.0,1.9121841256054861,1.9121841256054861,,,
+4,European Union,730511,Iron or steel (excluding cast iron); line pipe of a kind use,Base metals & articles,56017443.321,39.15006731350714,12.9819775000555,0.0,0.0,0.0,1.6698913560314346,1.6698913560314346,,,
+5,Japan,870322,Vehicles; with only spark-ignition internal combustion pisto,Vehicles & transport,823979793.243,46.34689937574137,0.027883677814990564,0.0,0.0,0.0,1.5145990388378714,1.5145990388378714,,,
